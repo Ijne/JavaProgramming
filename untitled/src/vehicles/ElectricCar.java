@@ -12,8 +12,8 @@ public class ElectricCar extends Car {
         return String.format("%s Car", engineType);
     }
 
-    public void setBatteryCapacity(int batteryCapacity) {
-        this.batteryCapacity = batteryCapacity;
+    public void setBatteryCapacity(int capacity) {
+        this.batteryCapacity = capacity;
     }
 
     public int getBatteryCapacity() {

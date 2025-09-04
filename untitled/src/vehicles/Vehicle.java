@@ -1,6 +1,6 @@
 package vehicles;
 
-public class Vehicle {
+public abstract class Vehicle {
     protected String model;
     protected String license;
     protected String color;

@@ -5,26 +5,23 @@ import vehicles.ElectricCar;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("--------Task1--------\n");
-        Car fuelCar = new Car();
+        Car car = new Car();
         ElectricCar electricCar = new ElectricCar();
 
-        //System.out.println(fuelCar.ownerName);
-        //System.out.println(fuelCar.insuranceNumber);
-        // System.out.println(fuelCar.engineType);
+        car.setYear(2006);
+        car.setOwnerName("Timoti");
+        car.setInsuranceNumber(122202567);
 
-        // System.out.println(electricCar.ownerName);
-        // System.out.println(electricCar.insuranceNumber);
-        // System.out.println(electricCar.engineType);
+        electricCar.setYear(2017);
+        electricCar.setOwnerName("Vanya");
+        electricCar.setInsuranceNumber(133202543);
 
-        fuelCar.setEngineType("Fuel");
-        electricCar.setEngineType("Electric");
+        int cap;
+        cap = electricCar.getBatteryCapacity();
+        System.out.println(cap);
 
-        fuelCar.ToString();
+        car.ToString();
         electricCar.ToString();
-
-        System.out.println(fuelCar.vehicleType());
-        System.out.println(electricCar.vehicleType());
 
     }
 }
